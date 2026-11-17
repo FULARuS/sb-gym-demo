@@ -10,8 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
-  <script src="gallery.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=3">
+  <script src="gallery.js?v=3" defer></script>
+  <script src="languages.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">İçeriğe geç</a>
@@ -23,6 +24,11 @@
       <a href="#ziyaret">Ziyaret</a>
     </nav>
     <a class="header-call" href="tel:+905304639470">Salonu ara <span aria-hidden="true">↗</span></a>
+    <select id="language" aria-label="Dil seç" hidden>
+      <option value="tr" lang="tr">Türkçe</option>
+      <option value="en" lang="en">English</option>
+      <option value="ar" lang="ar">العربية</option>
+    </select>
   </header>
   <main id="main">
     <section class="wrap hero" aria-labelledby="hero-title">
@@ -93,7 +99,7 @@
       </div>
       <div class="visit-card">
         <h3>Adres</h3>
-        <address>Çağlayan, 15 Temmuz Şehitler Cd. No: 9<br>34340 Kağıthane / İstanbul</address>
+        <address dir="ltr">Çağlayan, 15 Temmuz Şehitler Cd. No: 9<br>34340 Kağıthane / İstanbul</address>
         <h3>Çalışma saatleri</h3>
         <p>Her gün · 08.00–23.00</p>
         <a class="text-link" href="https://maps.app.goo.gl/HzE8bwngnRXpuSLH7" target="_blank" rel="noopener noreferrer">Google Haritalar’da doğrula <span aria-hidden="true">↗</span></a>
